@@ -4,11 +4,11 @@
 /usr/syno/bin/synopkg stop SurveillanceStation
 sleep 5
 cd /var/packages/SurveillanceStation/target/lib/
-cp ./libssutils.so ./libssutils.so_backup
-rm ./libssutils.so
+cp ./libsutils.so ./libsutils.so_backup
+rm ./libsutils.so
 wget https://github.com/Kaitiz/Surveillance-Station/raw/main/lib/SurveillanceStation-x86_64_openvino/libssutils.so
-chown SurveillanceStation:SurveillanceStation ./libssutils.so
-chmod 0644 ./libssutils.so
+chown SurveillanceStation:SurveillanceStation ./libsutils.so
+chmod 0644 ./libsutils.so
 
 cd /var/packages/SurveillanceStation/target/scripts
 cp ./S82surveillance.sh ./S82surveillance.sh_backup
